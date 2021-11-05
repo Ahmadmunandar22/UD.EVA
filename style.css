@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #eeeeee;
+}
+/*untuk backgrond home*/
+section{
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    position: relative;
+}
+section::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 027);
+}
+
+
+/*untuk sidebar*/
+.mobile-menu{
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+.side-bar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: #464646;
+    transition: .3s;
+    z-index: 5;
+}
+#check{
+    display: none;
+}
+.side-bar ul li a{
+    color: #e4e4e4;
+    transition: .3s;
+    transition-property: color;
+}
+.side-bar ul li a:hover{
+    color: #ffffff;
+}
+.side-bar ul li{
+    padding: 24px;
+    transition: .3s;
+    transition-property: background;
+    cursor: pointer;
+}
+.side-bar ul li:hover{
+    background: chocolate;
+}
+#check:checked{
+    left:0;
+}
+
+/*8untuk bagian header*/
+.wrappper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    line-height: 60px;
+}
+.logo img{
+    width: 80px;
+}
+.logo{
+    float: left;
+    color: #dadada;
+    font-size: 37px;
+    margin-top: 11px;
+    transition: 0.3s;
+    transition-property: color;
+}
+.logo i:hover{
+    color:#ffffff;
+}
+.menu{
+    float: right;
+}
+.header{
+    width: 100%;
+    background: #616161ee;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+}
+.header ul{
+    list-style-type: none;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+}
+.header ul li{
+    float: left;
+}
+.headerul li a{
+    color: #dadada;
+    text-align: center;
+    padding: 0px 19px;
+    font-size: 18px;
+    transition:0.3s;
+    transition-property: color;
+    padding: 10px 18px;
+}
+.header ul li a:hover{
+    color: #ffffff;
+}
+
+
+/*untuk bagian Home*/
+.wrappper-home{
+    width: 100%;
+    /*background:#616161a5;*/
+    margin: 190px auto;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.content-home{
+    background: #616161a6;
+    margin: 0px 420px;
+    padding:10px 0px;
+    border-radius: 20px;
+}
+.content-home h2{
+    color: #cf2121;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.content-home p{
+    color: #c9c610;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.content-home p a{
+    background: #c00a0a;
+    color: #414141;
+    border-radius: 20px;
+    padding:2px 10px;
+    transition: .3s;
+    transition-property: color,;
+}
+.content-home p a:hover{
+    color: #dedede;
+    background: #414141;
+}
+
+
+/*untuk bagina product*/
+.wrappper-signature{
+    width: 1200px;
+    margin:20px auto;
+    position:sticky;
+    z-index: 1;
+}
+.text-signature{
+    text-align: center;
+}
+.text-signature1 p{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #353535;
+}
+.text-signature img{
+    width: 15%;
+    height: 50%;
+    margin-top: 65px;
+}
+.text-signature h1{
+    font-size: 38px;
+    color: chocolate;
+    margin-top: 60px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.signature{
+    display: flex;
+}
+    .sign1{
+        float: left;
+        margin: 10px 30px 10px 35px;
+        border: 1px solid #d3d3d3;
+        text-align: center;
+        padding-bottom: 25px;
+        background: #ffffff;
+    }
+    .sign1 h2{
+        font-size: 20px;
+        color: chocolate;
+        margin: 10px 0px 18x;
+    }
+    .sign1 p{
+        font-family: 'calibri';
+        font-weight:200;
+        margin-bottom: 100px;
+    }
+    .sign1 p.price{
+        margin-bottom: 15px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .sign1 a.buy{
+        color: #f1f1f1;
+        background: #414141;
+        padding: 3px 20px;
+        border-radius: 20px;
+        font-size: 17px;
+        transition: 0.3s;
+        transition-property: color,background;
+    }
+    .sign1 a.buy:hover{
+        color: #ececec;
+        background: chocolate;
+    }
+.sign2{
+        float: left;
+        margin: 10px 30px 10px 0px;
+        border: 1px solid #dfdfdf;
+        text-align: center;
+        background: #ffffff;
+        padding-bottom: 25px;
+    }
+    .sign2 h2{
+        font-size: 20px;
+        color: chocolate;
+        margin:10x 0px 18px;
+
+    }
+    .sign2 p{
+        font-family: 'calibri';
+        font-weight: 200;
+        margin-bottom: 100px;
+    }
+    .sign2 p.price{
+        margin-bottom: 15px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .sign2a.buy{
+        color: #f1f1f1;
+        background: #414141;
+        padding: 3px 20px;
+        border-radius: 20px;
+        font-size: 17px;
+        transition: 0.3s;
+        transition-property: color,background;
+    }
+    .sign1 a.buy:hover{
+        color: #ececec;
+        background: chocolate;
+    }
+.sign3{
+    float: left;
+    margin: 10px 30px 10px 0px;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    background: #ffffff;
+    padding-bottom: 25px;
+}
+    .sign2 h2{
+        font-size: 20px;
+        color: chocolate;
+        margin:10x 0px 18px;
+
+    }
+    .sign2 p{
+        font-family: 'calibri';
+        font-weight: 200;
+        margin-bottom: 100px;
+    }
+    .sign2 p.price{
+        margin-bottom: 15px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .sign2a.buy{
+        color: #f1f1f1;
+        background: #414141;
+        padding: 3px 20px;
+        border-radius: 20px;
+        font-size: 17px;
+        transition: 0.3s;
+        transition-property: color,background;
+    }
+    .sign1 a.buy:hover{
+        color: #ececec;
+        background: chocolate;
+    }
+
+
+/*untuk bagiam package*/
+.wrappper-package{
+    width: 100%;
+    background: #a09898ee;
+}
+.wrappper-package h2{
+    color: #363636;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+.logo-package{
+    width: 100%;
+    margin-left: 70px;
+
+}
+.logo-package ul{
+    list-style-type: none;
+    display: flex;
+}
+.logo-package ul li.logo1{
+    margin: 20px 10px 80px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background, box-shadow;
+    text-align: center;
+    height: 220px;
+    width: 220px;
+
+}
+.logo-package ul li.logo1:hover{
+    background: #616161ee;
+    border-radius: 20px;
+    background: rgba(160, 152, 152, 0.933);
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.274),
+                15px 15px 13px rgba(129, 128, 128, 0.384);
+}
+.logo-package ul li.logo2{
+    margin: 20px 10px ;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background, box-shadow;
+    text-align: center;
+    height: 220px;
+    width: 220px;
+}
+.logo-package ul li.logo2:hover{
+    background: #616161ee;
+    border-radius: 20px;
+    background: rgba(160, 152, 152, 0.933);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.274),
+                15px 15px 13px 0px  rgba(129, 128, 128, 0.384);
+}
+.logo-package ul li.logo3{
+    margin: 20px 10px ;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background, box-shadow;
+    text-align: center;
+    height: 220px;
+    width: 220px;
+}
+.logo-package ul li.logo3{
+    background: #616161ee;
+    border-radius: 20px;
+    background: rgba(160, 152, 152, 0.933);
+    box-shadow: 10px -10px 10px rgba(255, 255, 255, 0.274),
+                -15px 15px 13px rgba(129, 128, 128, 0.384);
+
+}
+.logo-package ul li img{
+    padding-top: 40px;
+}
+.logo-package ul li p{
+    color: #363636;
+    text-align: center;
+    font-family: 'calibri';
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.logo-package ul li h4{
+    font-size: 17px;
+    text-align: center;
+    color: #363636;
+}
+
+
+/*untuk bagian wrapper*/
+.wrappper-promo{
+    width: 1100px;
+    margin: 30px auto 20px;
+}
+.wrappper-promo h2{
+    text-align: center;
+    color: #353535;
+    font-size: 40px;
+}
+.promo ul{
+    list-style-type: none;
+    display: flex;
+}
+.promo ul li {
+    float: left;
+    background: #ffffff;
+    padding-bottom: 30px;
+    margin: 15px;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+.promo ul li h3{
+    margin: 20px 0px 10px 20px;
+    color: #353535;
+    text-align: left;
+}
+.promo ul li p{
+    margin: 0px 20px;
+    font-family: 'calibri';
+    font-weight: 100;
+    font-size: 15px;
+    color: #5c5c5c;
+    text-align: left;
+}
+.promo ul li p.text{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'calibri';
+    font-size: 16px;
+    font-weight: 500px;
+}
+.promo ul li a{
+    text-align: center;
+    background: #707070;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f3f3f3;
+    transition: 0.3s;
+    transition-property:  color,background;
+}
+.promo ul li a:hover{
+    color: #f1f1f1;
+    background: #333333;
+}
+
+
+
+/*untuk bagian about*/
+.wrappper-est{
+    background-image: linear-gradient(rgba(0,0,0,0,0.603), rgba(51,51,51,0.397)), url(iamge/1jpg);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+}
+.content{
+    width: 900px;
+    color: #ffffff;
+    padding-top: 125px;
+    margin: 50px auto;
+}
+.content h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.content p{
+    font-size: 16px;
+}
+.wrappper-store{
+    width: 1000px;
+    margin:40px auto;
+    text-align: center;
+    padding-bottom: 80px;
+    color: #2e2e2e;
+}
+.content1{
+    margin-top: 20px;
+    font-size: 19px;
+}
+.content1 p{
+    font-size: 15px;
+}
+.content2{
+    display: flex;
+    margin-top: 90px;
+    text-align: center;
+}
+.content2 h2{
+    margin: 0px 70px;
+}
+.content2 h2 p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+/*untuk bagian contact*/
+.wrappper-best{
+    height: 50vh;
+    margin: auto;
+    background-size: contain;
+    background: #c7b8b8e1;
+    background-image: url(image/21.jpg);
+    background-repeat: no-repeat;
+    background-size: 59%;
+    background-position: bottom right;
+}
+.content3{
+    width: 650px;
+    margin-left: 80px;
+    padding: 60px 10px;
+}
+.content3 h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #414141;
+}
+.content3 p{
+    font-size: 17px;
+    color: #414141;
+    font-family: 'calibri';
+}
+
+
+
+/*untuk bagian footer*/
+.wrappper-footer{
+    height: 13vh;
+    width: 100%;
+    background: #555555;
+
+}
+.footer{
+    color: #d4d4d4;
+    padding: 30px;
+    font-size: 15px;
+    font-family: 'calibri';
+    float: left;
+}
+.copyright{
+    float: right;
+    padding: 30px;
+    font-size: 15px;
+    font-family: 'calibri';
+    color: #d4d4d4;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width:1080px) {
+    .header{
+        width: 100%;
+    }
+    .wrappper{
+        width: 100%;
+    }
+    section{
+        height: 60vh;
+    }
+    .wrappper-home{
+        width: 80%;
+        margin: 70px 45px;
+        position: absolute;
+    }
+    .content-home{
+        width: 100px;
+        position: relative;
+        width: 60vh;
+        margin: auto;
+    }
+    .wrappper-signature{
+        width: 100%;
+        height: 300vh;
+        margin: 10px auto;
+        position: relative;
+    }
+    .signature{
+        display: block;
+        margin: auto;
+    }
+    .text-signature{
+        width: 100%;
+        margin: auto;
+        float: left;
+    }
+    .sign1{
+        margin: 20px auto;
+        width: 100px;
+        position: relative;
+    }
+    .sign2{
+        margin: 20px auto;
+        width: 100px;
+        position: relative;
+ 
+    }
+    .sign3{
+        margin: 20px auto;
+        width: 100px;
+        position: relative;
+    }
+    .wrappper-package{
+        margin:  auto;
+        width: 100px;
+        position: relative;
+    }
+    .logo-package{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .wrappper-promo{
+        width: 100%;
+        height: 220vh;
+    }
+    .promo ul{
+        width: 100%;
+        display: block;
+    }
+    .wrappper-est{
+        width: 100%;
+    }
+    .content{
+        width: auto;
+        margin: 0px 10px;
+    }
+    .wrappper-store{
+        width: 100%;
+        height: 45vh;
+    }
+    .content2{
+        display: block;
+    }
+    .content2 h2{
+        width: auto;
+        margin: 30px;
+    }
+    .wrappper-best{
+        width: 100%;
+        height: 60vh;
+    }
+    .content3{
+        width: auto;
+    }
+    .wrappper-footer{
+        width: 100px;
+        height: 20vh;
+    }
+    .footer{
+        width: 100%;
+    }
+    .copyright{
+        float: none;
+    }
+}
+
+
+
+/*.container {
+    max-width: 1200px;
+}
+.icon i {
+    font-size: 60px;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5 {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+#blog .card-img-top{
+    max-height:200px;
+    object-fit:cover;
+}
+.card img{
+       width : 200px;
+    }
+.navbar {
+    align-content: center;
+}
